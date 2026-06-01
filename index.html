@@ -12,6 +12,28 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://ouassimboulacheb.github.io/">
   <link rel="stylesheet" href="style.css">
+
+  <!-- GEO : Données structurées JSON-LD (Action 3.3) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Ouassim Boulacheb",
+    "jobTitle": "Étudiant BUT MMI — Développeur web & Designer UI",
+    "url": "https://ouassimboulacheb.github.io",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Troyes",
+      "addressCountry": "FR"
+    },
+    "knowsAbout": ["HTML", "CSS", "PHP", "JavaScript", "Illustrator", "Photoshop", "Communication numérique", "Design graphique", "Identité visuelle", "Audit UX/UI"],
+    "alumniOf": "IUT de Troyes — BUT MMI",
+    "sameAs": [
+      "https://github.com/OuassimBoulacheb",
+      "https://www.linkedin.com/in/ouassim-b-bba0633ab/"
+    ]
+  }
+  </script>
 </head>
 <body>
 
@@ -127,6 +149,45 @@
         <div class="skill-desc">Ergonomie & benchmark</div>
         <div class="skill-bar"><div class="skill-fill" style="width:55%"></div></div>
       </div>
+    </div>
+  </section>
+
+  <!-- GEO : Section FAQ structure question → réponse (Actions 3.1 & 3.2) -->
+  <section id="faq" itemscope itemtype="https://schema.org/FAQPage">
+    <div class="sec-header fade-in">
+      <span class="sec-num">// 03</span>
+      <h2 class="sec-title">FAQ</h2>
+    </div>
+    <div class="about-grid fade-in delay-1">
+
+      <div class="about-cell" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+        <div class="about-cell-label" itemprop="name">Qui est Ouassim Boulacheb ?</div>
+        <div class="about-cell-val" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+          <span itemprop="text">Ouassim Boulacheb est un étudiant en 1ère année de BUT MMI à l'IUT de Troyes, spécialisé en développement web et design UI. Il maîtrise HTML, CSS, PHP et les outils Adobe (Illustrator, Photoshop).</span>
+        </div>
+      </div>
+
+      <div class="about-cell" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+        <div class="about-cell-label" itemprop="name">Quelles technologies utilises-tu ?</div>
+        <div class="about-cell-val" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+          <span itemprop="text">HTML, CSS, PHP et bases de données côté développement. Adobe Illustrator et Photoshop côté design. Git pour la gestion de versions.</span>
+        </div>
+      </div>
+
+      <div class="about-cell" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+        <div class="about-cell-label" itemprop="name">Es-tu disponible pour un stage ou une alternance ?</div>
+        <div class="about-cell-val" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+          <span itemprop="text">Oui, je suis disponible et ouvert à toute opportunité de stage ou d'alternance dans le domaine du développement web ou du design numérique à Troyes et ses environs.</span>
+        </div>
+      </div>
+
+      <div class="about-cell" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+        <div class="about-cell-label" itemprop="name">Où es-tu basé et comment te contacter ?</div>
+        <div class="about-cell-val" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+          <span itemprop="text">Basé à Troyes, France. Joignable par e-mail à boulachebouassim@gmail.com ou via LinkedIn et GitHub.</span>
+        </div>
+      </div>
+
     </div>
   </section>
 
