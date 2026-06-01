@@ -280,26 +280,7 @@ nav {
   color: var(--accent);
 }
 
-/* SCROLL INDICATOR */
-.scroll-hint {
-  position: absolute;
-  bottom: 3rem; left: 2.5rem;
-  display: flex;
-  align-items: center;
-  gap: 0.8rem;
-  font-family: 'JetBrains Mono', monospace;
-  font-size: 10px;
-  color: var(--dim);
-  letter-spacing: 0.1em;
-  animation: float 3s ease-in-out infinite;
-}
-@keyframes float { 0%,100%{transform:translateY(0)}50%{transform:translateY(6px)} }
-.scroll-hint::before {
-  content: '';
-  display: block;
-  width: 1px; height: 40px;
-  background: linear-gradient(to bottom, transparent, var(--dim));
-}
+
 
 /* ── SECTIONS ── */
 section { padding: 6rem 0; border-top: 1px solid var(--border); }
