@@ -1,0 +1,23 @@
+[
+
+    { "nom": "Woody", "vie": "25", "discretion": "22", "action": "40", "photo": "images/woody.png", "info": "Les mains en l'air ! Le shérif Woody est la pour faire régner l ordre dans la chambre d'Andy." },
+
+    { "nom": "Buzz l'éclair", "vie": "35", "discretion": "15", "action": "70", "photo": "images/buzz.png", "info": "Vers l'infini et au-delà !" },
+
+    { "nom": "Pil Poil", "vie": "14", "discretion": "10", "action": "60", "photo": "images/pilpoil.png", "info": "Il cherche à éliminer le grand méchant Zurg. Buzz sait voler grâce à ses ailes déployables." },
+
+    { "nom": "Alien", "vie": "11", "discretion": "12", "action": "10", "photo": "images/alien.png", "info": "Pas fufute mais très gentil" },
+
+    { "nom": "Rex", "vie": "40", "discretion": "24", "action": "50", "photo": "images/rex.png", "info": "Tout dans les muscles !" },
+
+    { "nom": "Jessie", "vie": "37", "discretion": "45", "action": "65", "photo": "images/jessie.png", "info": "Téméraire et intrépide ! " },
+
+    { "nom": "Sergent", "vie": "12", "discretion": "60", "action": "75", "photo": "images/sergent.png", "info": "Au service de tous !" },
+
+    { "nom": "Bayonne", "vie": "25", "discretion": "30", "action": "20", "photo": "images/bayonne.png", "info": "Tranquille et économe" },
+
+    { "nom": "ZigZag", "vie": "35", "discretion": "30", "action": "40", "photo": "images/zigzag.png", "info": "Toujours prêt à se plier en 4 pour Woody" },
+
+    { "nom": "Monsieur Patate", "vie": "18", "discretion": "35", "action": "30", "photo": "images/patate.png", "info": "Grincheux mais sympa" }
+
+]

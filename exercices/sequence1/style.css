@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', Arial, sans-serif;
+    margin: 0;
+    padding: 60px 40px 40px;
+    background-image: url('images/parquet.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.logo {
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    width: 110px;
+    transform: rotate(-15deg);
+    transition: transform 0.4s ease;
+}
+
+.logo:hover {
+    transform: rotate(0deg);
+}
+
+#card-container {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+/* Conteneur des cartes générées dynamiquement (exercice 3 du json) */
+#mazone {
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    column-gap: 60px;
+    row-gap: 50px;
+    justify-content: center;
+    align-items: start;
+}
+
+/* Centre la dernière carte si elle est seule sur sa ligne (ex: 10 cartes = 3+3+3+1) */
+#mazone > .toy-card:last-child:nth-child(3n + 1) {
+    grid-column: 2;
+}
+
+/* Pas d'overflow: hidden sur la carte, sinon l'image est coupée quand elle
+   dépasse en haut au survol. Les coins du bas sont arrondis via .toy-card__body */
+.toy-card {
+    --couleur: #f28a1a;
+    width: 300px;
+    border-radius: 16px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+    transition: box-shadow 0.4s ease;
+}
+
+/* Une carte sur deux en vert, comme dans la démo */
+.toy-card:nth-child(even) {
+    --couleur: #7cb82f;
+}
+
+.toy-card:hover {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.6);
+}
+
+.toy-card__image {
+    width: 100%;
+    height: 300px;
+    background: linear-gradient(160deg, #6b5a22 0%, #4a4a25 50%, #34431d 100%);
+    border-radius: 16px 16px 0 0;
+}
+
+.toy-card__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.toy-card:hover .toy-card__image img {
+    transform: scale(1.1) translateY(-8px);
+}
+
+/* Au-dessus de l'image pour masquer le bas de l'image qui déborde au survol */
+.toy-card__name {
+    position: relative;
+    z-index: 2;
+    background: var(--couleur);
+    color: #000;
+    text-align: center;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.2;
+    padding: 2px 0;
+}
+
+/* Arrondit les coins du bas et masque ce qui dépasse (stats en cours d'animation) */
+.toy-card__body {
+    overflow: hidden;
+    border-radius: 0 0 16px 16px;
+}
+
+.toy-card__description {
+    background: #fff;
+    color: #888;
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: center;
+    padding: 14px 16px;
+}
+
+/* Hauteur 0 + opacité 0 par défaut, apparaît EN DESSOUS de la description
+   au survol de la carte, en grandissant (pas en overlay). */
+.toy-card__unit-stats {
+    display: flex;
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    background: var(--couleur);
+    transition: height 0.4s ease, opacity 0.4s ease;
+}
+
+.toy-card:hover .toy-card__unit-stats {
+    height: 90px;
+    opacity: 1;
+}
+
+.one-third {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+}
+
+.one-third + .one-third {
+    border-left: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+.stat {
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.stat-value {
+    font-size: 13px;
+    text-transform: uppercase;
+}

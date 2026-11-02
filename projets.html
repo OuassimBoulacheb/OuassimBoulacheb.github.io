@@ -1,192 +1,52 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Projets & SAE — Ouassim Boulacheb · Portfolio MMI Troyes</title>
-  <meta name="description" content="Découvrez les projets et SAE d'Ouassim Boulacheb : stratégie de communication, développement web HTML/CSS/PHP, identité visuelle. Étudiant BUT MMI à Troyes.">
-  <link rel="canonical" href="https://ouassimboulacheb.github.io/projets.html">
-  <!-- Open Graph -->
-  <meta property="og:title" content="Projets & SAE — Ouassim Boulacheb">
-  <meta property="og:description" content="Projets réalisés en BUT MMI : stratégie de com, développement web, design graphique.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://ouassimboulacheb.github.io/projets.html">
-  <meta property="og:image" content="https://ouassimboulacheb.github.io/img/og-image.jpg">
-  <link rel="stylesheet" href="style.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Projets — Ouassim Boulacheb</title>
+<meta name="description" content="Portfolio d'Ouassim Boulacheb, étudiant en BUT MMI à l'IUT de Troyes. Développeur web, designer UI et communicant numérique.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700&family=Instrument+Sans:wght@400;500&display=swap" rel="stylesheet">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Ouassim Boulacheb — Portfolio MMI">
+<meta property="og:description" content="Étudiant BUT MMI à Troyes. Développeur web, designer UI et communicant numérique.">
+<meta property="og:url" content="https://ouassimboulacheb.github.io/">
+<meta property="og:image" content="https://ouassimboulacheb.github.io/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
-<div class="cursor"></div>
-<div class="cursor-ring"></div>
-
-<nav>
-  <div class="nav-inner">
-    <a href="index.html" class="nav-logo">Ouassim <span>Boulacheb</span></a>
-    <ul class="nav-links">
-      <li><a href="index.html">À propos</a></li>
-      <li><a href="projets.html" class="active">Projets</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-    <span class="status-dot">Disponible</span>
+<div id="progress"></div>
+<header><div class="wrap">
+  <a class="logo" href="index.html">Ouassim Boulacheb</a>
+  <nav aria-label="Navigation principale">
+    <a href="index.html#apropos">À propos</a>
+    <a href="index.html#competences">Compétences</a>
+    <a href="projets.html" aria-current="page">Projets</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</div></header>
+<main>
+<section><div class="wrap">
+  <h2>Projets</h2>
+  <p class="intro">Une sélection de mes réalisations en développement, design et communication.</p>
+  <div class="filters proj-filters" role="group" aria-label="Filtrer par catégorie">
+    <button type="button" data-cat="all" aria-pressed="true">Tous</button>
+    <button type="button" data-cat="dev" aria-pressed="false">Développement</button>
+    <button type="button" data-cat="design" aria-pressed="false">Design</button>
+    <button type="button" data-cat="com" aria-pressed="false">Communication</button>
   </div>
-</nav>
-
-<div class="container">
-  <main>
-
-  <div class="page-hero">
-    <div class="hero-bg-text" aria-hidden="true">SAE</div>
-    <span class="hero-tag fade-in">// Réalisations · Semestre 1 &amp; 2 · 2025—2026</span>
-    <h1 class="hero-name fade-in delay-1">Projets<br><span class="highlight">& SAE</span></h1>
-    <p class="hero-sub fade-in delay-2">
-      <span>Projets réalisés</span>
-      <span class="sep">—</span>
-      <span class="loc">BUT MMI · IUT de Troyes</span>
-    </p>
-  </div>
-
-  <section id="projects" style="border-top:none; padding-top: 4rem;">
-    <div class="projects-list">
-
-      <!-- ============================================================
-           PROJET 01 — Duplique ce bloc pour ajouter un projet
-           ============================================================ -->
-      <div class="project-card fade-in delay-1">
-        <div class="project-num">01</div>
-        <div class="project-body">
-          <!-- Remplace img/lumi.jpg par ton screenshot — upload l'image dans un dossier img/ sur GitHub -->
-          <img src="img/lumi.jpg" alt="Aperçu du projet Lumi — Stratégie de communication multicanal" class="project-img">
-          <div class="project-meta">
-            <span class="project-year">2025 · SAE 102</span>
-            <span class="project-badge badge-group">Groupe</span>
-          </div>
-          <div class="project-title">Lumi — Stratégie de Communication</div>
-          <div class="project-context">Concevoir une recommandation de communication numérique multicanal</div>
-          <p class="project-desc">
-            En groupe, nous avons créé "Lumi", une marque fictive de thé glacé ciblant les 18-35 ans en France, au Japon et aux États-Unis. Élaboration d'une charte graphique, de personas par pays, d'un benchmark et d'une stratégie de communication complète. Trois productions réalisées : un post Instagram, une affiche imprimée et une action de terrain (roue de la chance en entrée de stade).
-          </p>
-          <div class="project-tags">
-            <span class="tag">Canva</span>
-            <span class="tag">Photoshop</span>
-            <span class="tag">Stratégie</span>
-            <span class="tag">Personas</span>
-            <span class="tag">Benchmark</span>
-            <span class="tag">Social media</span>
-            <span class="tag">Print</span>
-          </div>
-          <div style="margin-top:1rem;">
-            <a href="sae102.pdf" download class="btn btn-ghost" style="font-size:10px; padding:0.5rem 1.2rem;">
-              Télécharger le PDF →
-            </a>
-          </div>
-        </div>
-        <div class="project-skills">
-          <span class="project-skills-label">Compétences</span>
-          <span class="competence-tag">Exprimer</span>
-          <span class="competence-tag">Concevoir</span>
-          <span class="competence-tag">Entreprendre</span>
-        </div>
-      </div>
-      <!-- ============================================================ -->
-
-
-      <div class="project-card fade-in delay-2">
-        <div class="project-num">02</div>
-        <div class="project-body">
-          <!-- Remplace img/realMadrid.jpg par ton screenshot — upload l'image dans un dossier img/ sur GitHub -->
-          <img src="img/realMadrid.jpg" alt="Aperçu du site web Real Madrid — page des meilleurs buteurs" class="project-img">
-          <div class="project-meta">
-            <span class="project-year">2026 · SAE 105</span>
-            <span class="project-badge badge-done">Terminé · En ligne</span>
-          </div>
-          <div class="project-title">Real Madrid — Site Web Complet</div>
-          <div class="project-context">Produire un site web · HTML / CSS / PHP</div>
-          <p class="project-desc">
-            Création d'un site web multi-pages sur le Real Madrid : page d'accueil, tableau des meilleurs buteurs généré dynamiquement depuis une base de données, galerie, formulaire de contact et page partenaires. Le site a ensuite été mis en ligne sur un serveur d'hébergement.
-          </p>
-          <div class="project-tags">
-            <span class="tag">HTML</span>
-            <span class="tag">CSS</span>
-            <span class="tag">PHP</span>
-            <span class="tag">Base de données</span>
-            <span class="tag">Hébergement</span>
-          </div>
-          <div style="margin-top:1rem;">
-            <a href="http://sae105.mmi25f15.mmi-troyes.fr/" target="_blank" class="btn btn-ghost" style="font-size:10px; padding:0.5rem 1.2rem;">
-              Voir le projet →
-            </a>
-          </div>
-        </div>
-        <div class="project-skills">
-          <span class="project-skills-label">Compétences</span>
-          <span class="competence-tag">Développer</span>
-          <span class="competence-tag">Comprendre</span>
-        </div>
-      </div>
-      <!-- ============================================================ -->
-
-
-<!-- CARTE 03 MASQUÉE (gabarit vide). Pour la réactiver, supprime ce commentaire quand elle est remplie.
-      <!-- ============================================================
-           PROJET 03
-           ============================================================ - ->
-      <div class="project-card fade-in delay-3">
-        <div class="project-num">03</div>
-        <div class="project-body">
-          <div class="project-meta">
-            <span class="project-year"><!-- ANNÉE · CODE - -></span>
-            <span class="project-badge badge-done">Terminé</span>
-            <!-- <span class="project-badge badge-wip">En cours</span> - ->
-            <!-- <span class="project-badge badge-group">Groupe</span> - ->
-          </div>
-          <div class="project-title"><!-- NOM DU PROJET - -></div>
-          <div class="project-context"><!-- CONTEXTE - -></div>
-          <p class="project-desc">
-            <!-- DESCRIPTION DU PROJET - ->
-          </p>
-          <div class="project-tags">
-            <span class="tag"><!-- Outil 1 - -></span>
-            <span class="tag"><!-- Outil 2 - -></span>
-            <span class="tag"><!-- Outil 3 - -></span>
-          </div>
-          <div style="margin-top:1rem;">
-            <a href="<!-- URL DU PROJET - ->" target="_blank" class="btn btn-ghost" style="font-size:10px; padding:0.5rem 1.2rem;">
-              Voir le projet →
-            </a>
-          </div>
-        </div>
-        <div class="project-skills">
-          <span class="project-skills-label">Compétences</span>
-          <!-- <span class="competence-tag">Exprimer</span> - ->
-          <!-- <span class="competence-tag">Concevoir</span> - ->
-          <!-- <span class="competence-tag">Développer</span> - ->
-          <!-- <span class="competence-tag">Comprendre</span> - ->
-          <!-- <span class="competence-tag">Entreprendre</span> - ->
-        </div>
-      </div>
-      <!-- ============================================================ - ->
-
--->
-
-      <!-- Pour ajouter un projet :
-           1. Copie le bloc entre les lignes "===" ci-dessus
-           2. Change le numéro (04, 05…)
-           3. Change la classe fade-in delay-X (delay-4, delay-5…)
-           4. Remplis les placeholders -->
-
-    </div>
-  </section>
-
-  <footer>
-    <div class="footer-inner">
-      <p class="footer-copy">Conçu &amp; développé par <span>Ouassim Boulacheb</span> · 2026</p>
-      <p class="footer-copy">BUT MMI · IUT de Troyes</p>
-    </div>
-  </footer>
-
-  </main>
-</div>
-
-<script src="main.js" defer></script>
+  <ul class="projects" id="projets"></ul>
+</div></section>
+</main>
+<footer><div class="wrap"><span>Conçu &amp; développé par Ouassim Boulacheb · <span id="year"></span></span><span>BUT MMI · IUT de Troyes</span></div></footer>
+<dialog id="detail" aria-label="Détail du projet"></dialog>
+<div id="toast" role="status">Email copié</div>
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
