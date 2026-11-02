@@ -12,6 +12,9 @@ addEventListener('scroll', () => {
   const h = document.documentElement;
   $('#progress').style.width = (h.scrollTop / (h.scrollHeight - h.clientHeight) * 100) + '%';
   $('header').classList.toggle('scrolled', h.scrollTop > 10);
+  // Retire le lien actif quand on remonte tout en haut (avant la section À propos)
+  const ap = $('#apropos');
+  if (ap && h.scrollTop < ap.offsetTop - innerHeight * .5) $$('nav a.active').forEach(a => a.classList.remove('active'));
 }, { passive: true });
 
 /* Titre : découpe en lettres pour l'animation d'entrée */

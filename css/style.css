@@ -23,7 +23,7 @@ header.scrolled{border-color:var(--line)}
 header .wrap{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem;padding:1rem 0}
 .logo{font:600 1.1rem var(--display);text-decoration:none}
 nav{display:flex;gap:1.5rem}
-nav a{text-decoration:none;color:var(--muted);transition:color .2s;padding:.2rem 0;border-bottom:2px solid transparent}
+nav a{text-decoration:none;color:var(--muted);transition:color .2s;padding:.2rem 0;border-bottom:2px solid transparent;white-space:nowrap}
 nav a:hover,nav a.active,nav a[aria-current="page"]{color:var(--text)}
 nav a.active,nav a[aria-current="page"]{border-color:var(--accent)}
 
@@ -136,3 +136,4 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:.5rem
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}html{scroll-behavior:auto}h1 .ch{transform:none}.reveal{opacity:1;transform:none}.meter i{transform:none}}
 
 dialog img{width:100%;height:auto;border-radius:10px;border:1px solid var(--line);margin-bottom:1.2rem;display:block}
+@media (max-width:520px){nav{flex-wrap:wrap;gap:.3rem 1.1rem}nav a{font-size:.95rem}}
