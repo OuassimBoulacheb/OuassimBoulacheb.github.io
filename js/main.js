@@ -86,7 +86,7 @@ function afficher(filtre = 'all', limit = Infinity) {
   });
 }
 function ouvrir(p) {
-  dlg.innerHTML = `${p.image ? `<img src="${p.image}" alt="${p.alt || p.titre}" loading="lazy">` : ''}<h3>${p.titre}</h3><p>${p.details}</p>${tags(p)}<div class="actions">${p.lien ? `<a class="btn primary" href="${p.lien}" target="_blank" rel="noopener">Voir le projet</a>` : ''}<button class="btn" type="button" id="fermer">Fermer</button></div>`;
+  dlg.innerHTML = `${p.image ? `<img src="${p.image}" alt="${p.alt || p.titre}" loading="lazy">` : ''}<h3>${p.titre}</h3><p>${p.details}</p>${tags(p)}<div class="actions">${p.lien ? `<a class="btn primary" href="${p.lien}" target="_blank" rel="noopener">Voir le projet</a>` : ''}${p.code ? `<a class="btn" href="${p.code}" target="_blank" rel="noopener">Voir le code</a>` : ''}<button class="btn" type="button" id="fermer">Fermer</button></div>`;
   $('#fermer').onclick = () => dlg.close(); dlg.showModal();
 }
 dlg?.addEventListener('click', e => { if (e.target === dlg) dlg.close(); });
